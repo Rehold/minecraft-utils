@@ -20,7 +20,7 @@ Customizeable (to disable a feature, set to ""
 
 ![img 01](https://cdn.upload.systems/uploads/ovzgW8rs.png)
 ![img 02](https://cdn.upload.systems/uploads/9khSMqFR.png)
-###& more.. *that i cant show because I don't own a server*
+### & more.. *that i cant show because I don't own a server*
 
 
 
