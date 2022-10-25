@@ -9,15 +9,15 @@ configjson = open("config.json")
 # config should be file name, () gotta be var above
 config = json.load(configjson)
 serverID = int(config['bot']["serverID"])
-serverIP = config['main']["serverIP"]
+serverIP = config['main']["minecraftIP"]
 logChannel = int(config['channels']['main']['mcJoinLog'])
 mainColor = config['brandingColors']["mainColor"]
 errorColor = config['brandingColors']["errorColor"]
 successColor = config['brandingColors']["successColor"]
 configjson.close()
 
-dbjson = open("config.json")
-db = json.load(configjson)
+dbjson = open("db.json")
+db = json.load(dbjson)
 dbjson.close()
 
 class UserJoinMCServer(commands.Cog):
@@ -48,6 +48,7 @@ class UserJoinMCServer(commands.Cog):
         if server['online'] == False:
             return
         else:
+            print(server)
             for player in server['players']['list']:
                 if player in db['main']['lastPlayerUpdate']:
                     return

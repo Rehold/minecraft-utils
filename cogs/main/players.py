@@ -17,7 +17,7 @@ configjson = open("config.json")
 # config should be file name, () gotta be var above
 config = json.load(configjson)
 serverID = int(config['bot']["serverID"])
-serverIP = config['main']["serverIP"]
+serverIP = config['main']["minecraftIP"]
 mainColor = config['brandingColors']["mainColor"]
 errorColor = config['brandingColors']["errorColor"]
 successColor = config['brandingColors']["successColor"]
